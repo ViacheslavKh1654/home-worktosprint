@@ -42,7 +42,7 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
 }
 
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
-    return affairs.filter(t => t._id !== _id) // need to fix
+    return affairs.filter(a => a._id !== _id) // need to fix
 }
 
 function HW2() {
