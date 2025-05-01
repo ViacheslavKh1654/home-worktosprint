@@ -11,7 +11,7 @@ type SuperButtonPropsType = DefaultButtonPropsType & {
 
 const SuperButton: React.FC<SuperButtonPropsType> = (
     {
-        xType = "default",
+        xType,
         className,
         disabled,
         ...restProps // все остальные пропсы попадут в объект restProps, там же будет children
@@ -28,7 +28,7 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
                 ? ' ' + s.disabled 
         : xType === 'red' ? ' ' + s.red
         : xType === 'secondary' ? ' ' + s.secondary
-        : '') +
+        : '' + s.default) +
     (className ? ' ' + className : '');
     return (
         <button

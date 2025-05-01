@@ -8,6 +8,8 @@
 }
 
 .default {
+    background-color: lightgray; /* или любой другой стиль */
+    color: rgb(213, 5, 5);
 }
 
 .red {
